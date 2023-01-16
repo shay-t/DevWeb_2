@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head> 
+    <title>Exercice 1</title>
+     <meta charset="utf-8">
+     <meta name="author" content="Chayma tlemcani">
+     <meta name="description" content="formulaires d'inscription">
+     <meta name="made" content="tlemcanichayma@gmail.com">
+</head>
+<body bgcolor="ddbea9">
+<form method="get" action="formulaire.php" oninput="resultat.value=a.value*99+b.value*10">
+    <label for="nc"> Nom complet :</label> <br><br>
+    <input type="text" name="nc" id="nc" size="30" pattern="^[a-zA-Z\]+$" maxlength="20" required="required" placeholder="le prénom suivi du Nom"><br><br>
+    <label for="useremail"> Adresse e-mail: </label> <br><br>
+    <input type="email" name="useremail" size="30" required="required"> <br><br>
+    <label for="date_darrive"> Date d'arrivée :</label><br><br>
+    <input type="date" name="date_darrive" required="required"> <br><br>
+    <label for="heure_darrive"> Heure d'arrivée :</label><br><br>
+    <input type="time" name="heure_darrive" required="required"><br><br>
+    <label for="a"> Nombres de nuitées (99€ par nuit): </label><br><br>
+    <input type="number" name="a" value="1"> <br><br>
+    <label for="b"> Nomrbres d'invités (10€ par invité supplémentaire): </label><br> <br>
+    <input type="number" name="b" value="1"><br><br>
+    <label for="useremail"> Total: </label> <br><br>
+    <output name="resultat"> 99.00 </output> € <br><br>
+    <label for="promo"> Code de promotion :</label><br><br>
+    <input type="text" name="promo"><br> <br>
+<input type="submit" name="validation" value=" Effectuer la réservation ">
+</form>
+
+
+
+
+
+
+
+
+
+ </body>
